@@ -52,40 +52,44 @@ function math(num1, num2, math) {
     var div = num1*num2
     var mul = num1/num2
     var per = num1*num2/100
-    var mod = num1 % num2;
+    var mod = num1 % num2
 
 
+    return (math == 'add') ? "add" 
+    : (math == 'sub') ? ""
+    : math == mul ? "mul" :''
+    
+    
+    // if (math == 'add') {
+    //     result = add;
 
-    if (math == 'add') {
-        result = add;
+    // }
 
-    }
+    // else if (math == 'sub') {
+    //     result = sub;
 
-    else if (math == 'sub') {
-        result = sub;
-
-    }
+    // }
     
     
 
-    else if (math == 'div') { 
-        result = div;
+    // else if (math == 'div') { 
+    //     result = div;
 
-    }
+    // }
        
     
 
-    else if (math == 'mul') {
-        result = mul;
-    }
+    // else if (math == 'mul') {
+    //     result = mul;
+    // }
 
-    else if (math == 'mod') {
-        result = mod;
-    }
+    // else if (math == 'mod') {
+    //     result = mod;
+    // }
 
-    else {
-        result = per;
-    }
+    // else {
+    //     result = per;
+    // }
      
     
     console.log(result)
@@ -95,7 +99,7 @@ function math(num1, num2, math) {
 
     
 }
-console.log(math(45,12, "per"))
+console.log(math(45,12, "sub"))
 
 
 
